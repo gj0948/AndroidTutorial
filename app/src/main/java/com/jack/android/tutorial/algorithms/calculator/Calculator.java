@@ -28,37 +28,37 @@ public interface Calculator<ValueType> {
      * set next operand for the Calculator.
      *
      * @param operand - the next operand for the Calculator. The Calculator may receive multiple calculators for execute the calculation.
-     * @return true if the operand is legal, otherwise returns false.
      * @throws com.jack.android.tutorial.algorithms.calculator.exceptions.IllegalOperandException  - be thrown while the operands where illegal, and the status will be cleared simultaneously.
      */
-    public boolean setNextOperand(String operand) throws IllegalOperandException;
+    //* @return true if the operand is legal, otherwise returns false.
+    public void setNextOperand(String operand) throws IllegalOperandException;
 
     /**
      * set next operands for the Calculator.
      *
      * @param operands - the next operands for the Calculator. The Calculator may receive multiple operands for executing a calculation.
-     * @return true if the operands are legal, otherwise returns false.
      * @throws com.jack.android.tutorial.algorithms.calculator.exceptions.IllegalOperandException  - be thrown while the operands where illegal, and the status will be cleared simultaneously.
      */
-    public boolean setNextOperands(List<String> operands) throws IllegalOperandException;
+    //* @return true if the operands are legal, otherwise returns false.
+    public void setNextOperands(List<String> operands) throws IllegalOperandException;
 
     /**
      * set next operator for the Calculator.
      *
      * @param operator - the next operator for the Calculator. The Calculator may receive multiple operators for executing a calculation.
-     * @return true if the operator is legal, otherwise returns false.
      * @throws com.jack.android.tutorial.algorithms.calculator.exceptions.OperatorNotSupportedException - be thrown while the operators were not supported, and the status will NOT be cleared.
-     * @throws com.jack.android.tutorial.algorithms.calculator.exceptions.IllegalOperatorException - be thrown while the operators were illegal, and the status will be cleared simultaneously.
      */
-    public boolean setNextOperator(Operator<ValueType> operator) throws OperatorNotSupportedException, IllegalOperatorException;
+    //* @return true if the operator is legal, otherwise returns false.
+    //* @throws com.jack.android.tutorial.algorithms.calculator.exceptions.IllegalOperatorException - be thrown while the operators were illegal, and the status will be cleared simultaneously.
+    public void setNextOperator(Operator<ValueType> operator) throws OperatorNotSupportedException;//, IllegalOperatorException;
 
     /**
      * set next operators for the Calculator.
      *
      * @param operators - the next operators for the Calculator. The Calculator may receive multiple operators for executing a calculation.
-     * @return true if the operators are legal, otherwise returns false.
      * @throws com.jack.android.tutorial.algorithms.calculator.exceptions.OperatorNotSupportedException - be thrown while the operators were not supported, and the status will NOT be cleared.
-     * @throws com.jack.android.tutorial.algorithms.calculator.exceptions.IllegalOperatorException - be thrown while the operators were illegal, and the status will be cleared simultaneously.
      */
-    public boolean setNextOperators(List<Operator<ValueType>> operators) throws OperatorNotSupportedException, IllegalOperatorException;
+    //* @return true if the operators are legal, otherwise returns false.
+    //* @throws com.jack.android.tutorial.algorithms.calculator.exceptions.IllegalOperatorException - be thrown while the operators were illegal, and the status will be cleared simultaneously.
+    public void setNextOperators(List<Operator<ValueType>> operators) throws OperatorNotSupportedException;//, IllegalOperatorException;
 }

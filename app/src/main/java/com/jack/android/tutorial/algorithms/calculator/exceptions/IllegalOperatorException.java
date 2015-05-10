@@ -9,4 +9,8 @@ public class IllegalOperatorException extends CalculationException {
     public IllegalOperatorException() {
         super(ERROR_MESSAGE);
     }
+
+    public IllegalOperatorException(String details) {
+        super(ERROR_MESSAGE, details);
+    }
 }

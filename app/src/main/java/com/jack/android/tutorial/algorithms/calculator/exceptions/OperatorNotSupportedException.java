@@ -9,4 +9,8 @@ public class OperatorNotSupportedException extends CalculationException {
     public OperatorNotSupportedException() {
         super(ERROR_MESSAGE);
     }
+
+    public OperatorNotSupportedException(String details) {
+        super(ERROR_MESSAGE, details);
+    }
 }
