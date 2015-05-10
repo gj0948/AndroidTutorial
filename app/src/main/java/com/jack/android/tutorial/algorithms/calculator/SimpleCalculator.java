@@ -14,9 +14,9 @@ import java.util.Set;
  */
 public class SimpleCalculator implements Calculator<Double> {
     public static final Operator<Double> OPERATOR_PLUS = new OperatorPlus();
-    public static final Operator<Double> OPERATOR_MINUS = new OperatorPlus();
-    public static final Operator<Double> OPERATOR_MULTIPLE = new OperatorPlus();
-    public static final Operator<Double> OPERATOR_DIVISION = new OperatorPlus();
+    public static final Operator<Double> OPERATOR_MINUS = new OperatorMinus();
+    public static final Operator<Double> OPERATOR_MULTIPLE = new OperatorMultiple();
+    public static final Operator<Double> OPERATOR_DIVISION = new OperatorDivision();
 
     private static final Set<Operator<Double>> SUPPORTED_OPERATORS;
 
@@ -107,6 +107,11 @@ public class SimpleCalculator implements Calculator<Double> {
             double rightValue = operands.remove(0);
             return leftValue + rightValue;
         }
+
+        @Override
+        public String toString() {
+            return super.toString() + ": " + OperatorPlus.class.getSimpleName();
+        }
     }
 
     public static class OperatorMinus implements Operator<Double> {
@@ -120,6 +125,11 @@ public class SimpleCalculator implements Calculator<Double> {
             double rightValue = operands.remove(0);
             return leftValue - rightValue;
         }
+
+        @Override
+        public String toString() {
+            return super.toString() + ": " + OperatorMinus.class.getSimpleName();
+        }
     }
 
     public static class OperatorMultiple implements Operator<Double> {
@@ -132,6 +142,11 @@ public class SimpleCalculator implements Calculator<Double> {
             double leftValue = operands.remove(0);
             double rightValue = operands.remove(0);
             return leftValue * rightValue;
+        }
+
+        @Override
+        public String toString() {
+            return super.toString() + ": " + OperatorMultiple.class.getSimpleName();
         }
     }
 
@@ -148,6 +163,11 @@ public class SimpleCalculator implements Calculator<Double> {
             double leftValue = operands.remove(0);
             double rightValue = operands.remove(0);
             return leftValue / rightValue;
+        }
+
+        @Override
+        public String toString() {
+            return super.toString() + ": " + OperatorDivision.class.getSimpleName();
         }
     }
 }

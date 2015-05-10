@@ -5,7 +5,7 @@
     <string name="action_settings">Settings</string>
 
     <string name="title_activity_calculator">CalculatorActivity</string>
-    <string name="result">Result goes here</string>
+    <string name="result">0</string>
 
     <!-- all the button hints goes here-->
     <string name="button_number_0">0</string>
@@ -30,7 +30,7 @@
 
     <string-array name="main_menu">
         <item>Calculator</item>
-        <item>Dummy Item</item>
-        <item>Dummy Item</item>
+        <!--<item>Dummy Item</item>-->
+        <!--<item>Dummy Item</item>-->
     </string-array>
 </resources>
