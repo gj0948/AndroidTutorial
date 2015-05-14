@@ -30,8 +30,7 @@
 
     <string-array name="main_menu">
         <item>Calculator</item>
-        <item>Flow Layout Demo</item>
+        <item>Dummy Item</item>
         <item>Dummy Item</item>
     </string-array>
-    <string name="title_activity_flow_layout">FlowLayoutActivity</string>
 </resources>
