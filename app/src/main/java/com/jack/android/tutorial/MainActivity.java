@@ -14,7 +14,8 @@ public class MainActivity extends ActionBarActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
 
     private static final Class<?>[] mActivities = new Class<?>[]{
-            CalculatorActivity.class
+            CalculatorActivity.class,
+            FlowLayoutActivity.class
     };
     AdapterView.OnItemClickListener mMainMenuOnItemClickListener = new AdapterView.OnItemClickListener() {
         @Override
