@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jack.android.tutorial.TopBarActivity">
+
+    <com.jack.android.tutorial.ui.custom.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftText="Left"
+        app:leftTextColor="@android:color/black"
+        app:rightText="Right"
+        app:rightTextColor="@android:color/black"
+        app:titleText="Title"
+        app:titleTextColor="@android:color/black"
+        app:titleTextSize="16sp" />
+    <!--app:leftBackground="@android:color/holo_blue_dark"-->
+    <!--app:rightBackground="@android:color/holo_blue_dark"-->
+
+</RelativeLayout>

@@ -22,6 +22,9 @@
         <activity
             android:name=".FlowLayoutActivity"
             android:label="@string/title_activity_flow_layout" />
+        <activity
+            android:name=".TopBarActivity"
+            android:label="@string/title_activity_top_bar" />
     </application>
 
 </manifest>
