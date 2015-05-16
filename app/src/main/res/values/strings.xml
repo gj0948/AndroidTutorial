@@ -5,6 +5,7 @@
         <item>Calculator</item>
         <item>FlowLayout</item>
         <item>TopBar</item>
+        <item>ArcMenu</item>
     </string-array>
 
     <string name="hello_world">Hello world!</string>
@@ -36,4 +37,5 @@
 
     <string name="result">Result goes here</string>
     <string name="title_activity_top_bar">TopBarActivity</string>
+    <string name="title_activity_arc_menu">ArcMenuActivity</string>
 </resources>

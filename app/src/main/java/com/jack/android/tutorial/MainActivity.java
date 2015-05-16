@@ -16,7 +16,8 @@ public class MainActivity extends ActionBarActivity {
     private static final Class<?>[] mActivities = new Class<?>[]{
             CalculatorActivity.class,
             FlowLayoutActivity.class,
-            TopBarActivity.class
+            TopBarActivity.class,
+            ArcMenuActivity.class
     };
     AdapterView.OnItemClickListener mMainMenuOnItemClickListener = new AdapterView.OnItemClickListener() {
         @Override
