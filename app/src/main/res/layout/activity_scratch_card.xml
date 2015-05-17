@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jack.android.tutorial.ScratchCardActivity">
+
+    <com.jack.android.tutorial.ui.custom.ScratchCard
+        android:id="@+id/scratch_card"
+        android:layout_width="600dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        app:foreground="@mipmap/ic_launcher"
+        app:text="$5,000,000"
+        app:textColor="@android:color/holo_red_dark"
+        app:textSize="32sp" />
+
+</RelativeLayout>

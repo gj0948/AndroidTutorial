@@ -17,7 +17,8 @@ public class MainActivity extends ActionBarActivity {
             CalculatorActivity.class,
             FlowLayoutActivity.class,
             TopBarActivity.class,
-            ArcMenuActivity.class
+            ArcMenuActivity.class,
+            ScratchCardActivity.class
     };
     AdapterView.OnItemClickListener mMainMenuOnItemClickListener = new AdapterView.OnItemClickListener() {
         @Override
@@ -35,7 +36,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         mMainMenu = getResources().getStringArray(R.array.main_menu);
-        mMainMenuAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, mMainMenu);
+        mMainMenuAdapter = new ArrayAdapter<>(this, R.layout.item_list_main, mMainMenu);
 
         mListView = (ListView) findViewById(R.id.listMainMenu);
         mListView.setAdapter(mMainMenuAdapter);
